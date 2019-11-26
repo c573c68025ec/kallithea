@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-ARG KALLITHEA_VER=
+ARG KALLITHEA_VER=0.5.0
 
 RUN apt-get update \
  && apt-get install -y dumb-init nginx locales mercurial git python \
