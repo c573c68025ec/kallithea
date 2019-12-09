@@ -52,8 +52,8 @@ spec:
         name: kallithea
         ports:
         - name: kallithea
-          containerPort: 16868
-          hostPort: 16868
+          containerPort: 8000
+          hostPort: 8000
         volumeMounts:
         - name: kallithea-storage
           mountPath: /data/db
@@ -72,7 +72,7 @@ metadata:
 spec:
   type: ClusterIP
   ports:
-    - port: 16868
-      targetPort: 16868
+    - port: 8000
+      targetPort: 8000
   selector:
     name: kallithea
